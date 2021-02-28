@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DevNotify
+        </title>
+        <link rel="stylesheet" href="popup.css">
+        <script type="text/javascript" src="popup.js"></script>
+    </head>
+    <body>
+        <form id="form">
+            <h4>Select all those Platforms of which you want to be notified!</h4>
+            
+            <input type="checkbox" name="CF" value="codeforces.com">
+            <label for="CF">Codeforces</label><br>
+            <input type="checkbox" name="CC" value="codechef.com">
+            <label for="CC">Codechef</label><br>
+            <input type="checkbox" name="HE" value="hackerearth.com">
+            <label for="HE">Hackerearth</label><br>
+            <input type="checkbox" name="At" value="atcoder.jp">
+            <label for="At">AtCoder</label><br>
+            <input type="checkbox" name="TC" value="topcoder.com">
+            <label for="TC">TopCoder</label><br>
+            <input type="checkbox" name="LC" value="leetcode.com">
+            <label for="LC">LeetCode</label><br>
+            <input type="checkbox" name="GCC" value="codingcompetitions.withgoogle.com">
+            <label for="GCC">Google Coding Competitions</label><br>
+            <input type="checkbox" name="HR" value="hackerrank.com">
+            <label for="HR">Hackerrank</label><br>
+            <input type="checkbox" name="YC" value="yukicoder.me">
+            <label for="YC">YukiCoder</label><br>
+            <br>
+            <button type="submit" id="submitform">Save</button>
+        </form>
+        <br>
+        <button id="help">How to use</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h4>Welcome !!</h4>
+              <h5>How to use:</h5>
+              <p>Firstly,pin the extension icon on Extension Menu.</p>
+              <p>Now,on clicking the extension icon, it provides a list of different platforms,from which you
+                  can check all those from which you want to be notified. 
+              </p>
+              <p>This extension gives notifications about all events(contest,hiring challenges,Hackathons,webinar,etc.)
+                  which are going to take place on your selected platforms in near future.
+              </p>
+              <p>Each Notification consist of few details about event:<br>
+                  1.Name of Event<br>
+                  2.Start Date and Time of Event (in your Local time)<br>
+                  3.Platform Icon<br>
+                  4.Two buttons will be there:<br>
+                        (i)<u>Take me there</u>:Visit website to register<br>
+                        (ii)<u>Don't show this contest</u>:If you dont want to receive notification of that event again,
+                            click this button<br>
+              </p>
+              <p>Anytime you feel to update your preferences,just again check your required platforms and click Save</p>
+              <p>Notification Pattern:<br>
+                1.As soon as you Update your preferences,the notifications will start<br>
+                2.At every 3hrs ,new notifications will come(if you have saved your preferences)<br> 
+            </p>
+            <h5>Important:</h5>
+            <p>For receiving Chrome Notifications,it must be allowed in system.<br>
+                Check Here:<br>
+                <u>For Windows User</u> : Settings -> System -> Notifications & actions<br>
+                <u>For Mac User</u> : Apple Menu -> System Preferences -> Notifications</p> 
+            </div>
+        </div>
+        
+    </body>
+    
+</html>

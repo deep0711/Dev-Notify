@@ -1,0 +1,20 @@
+{
+    "manifest_version":2,
+    "name":"DevNotify",
+    "version":"0.0.1",
+    "background":{
+        "scripts":["background.js"]
+    },
+    "browser_action":{
+        "default_icon":"images/ct.png",
+        "default_title":"DevNotify",
+        "default_popup":"popup.html"
+    },
+    "permissions":[
+        "storage",
+        "alarms",
+        "https://clist.by/*",
+        "notifications",
+        "background"
+    ]
+}
